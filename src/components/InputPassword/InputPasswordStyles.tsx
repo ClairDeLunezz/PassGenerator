@@ -11,6 +11,8 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         marginVertical: 30,
         textAlign: 'center',
-        fontWeight: '600'
+        fontWeight: '600',
+        color: '#fff',
+        fontSize: 25
     }
 })

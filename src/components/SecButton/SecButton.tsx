@@ -1,19 +1,25 @@
 import React, {useState} from "react";
 import { View, Button, Text, Pressable } from "react-native";
+import * as Clipboard from 'expo-clipboard';
 
 import { styles } from "./SecButtonStyles";
+
+import { InputPassword } from "../InputPassword/InputPassword";
+
+import { passwordService } from "../../services/passswordService";
 
 
 
 export function SecButton(){
     const [ pass, setPass ] = useState('')
 
-    function Pressionar(){
-        console.log("Gerador de senha pressionado!")
+    function handleGenPassword(){
+        let token = passwordService()
+        setPass(token)
     }
 
-    function handlePassword(){
-
+    function handleCopy(){
+        Clipboard.setStringAsync(pass);
     }
 
     return(
@@ -23,12 +29,14 @@ export function SecButton(){
                 onPress={Pressionar}
             />*/}
 
+            <InputPassword pass={pass}/>
+
             <Pressable style={styles.button}>
-                <Text style={styles.texto} onPress={Pressionar}>GERAR SENHA 🙊</Text>
+                <Text style={styles.texto} onPress={handleGenPassword}>GERAR SENHA 🙊</Text>
             </Pressable>
 
             <Pressable style={styles.button}>
-                <Text style={styles.texto} onPress={Pressionar}>COPIAR 🗒️</Text>
+                <Text style={styles.texto} onPress={handleCopy}>COPIAR 🗒️</Text>
             </Pressable>
         </>
 

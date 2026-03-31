@@ -4,7 +4,7 @@ import { View, Text } from "react-native";
 
 import { Menu } from "../components/Menu/Menu"
 import { Logo } from '../components/Logo/Logo';
-import { InputPassword } from '../components/InputPassword/InputPassword';
+
 import { SecButton } from '../components/SecButton/SecButton';
 
 import { styles } from './HomeStyles';
@@ -18,7 +18,6 @@ export function Home(){
             </View>
 
             <View style={styles.inputContainer}>
-                <InputPassword/>
                 <SecButton/>
             </View>
 

@@ -10,10 +10,10 @@ export const styles = StyleSheet.create({
     },
     logoContainer: {
         borderWidth: 3,
-        borderColor: '#0089cd',
+        borderColor: '#0083c5',
         marginBottom: 10,
         paddingHorizontal: 12,
-       paddingVertical: 30
+        paddingVertical: 30
     },
     inputContainer: {
         width: '100%',
