@@ -7,14 +7,14 @@ export const styles = StyleSheet.create({
         textAlign: 'center',
         color: '#fff'
     },
-    button: {
+   button: {
         width: '80%',
         borderWidth: 2,
         borderColor: '#00afef',
         borderRadius: 5,
         marginBottom: 25,
         paddingVertical: 8,
-        backgroundColor: '#007ab3',
+        
     },
     
     input: {
