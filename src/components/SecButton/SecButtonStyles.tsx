@@ -15,5 +15,19 @@ export const styles = StyleSheet.create({
         marginBottom: 25,
         paddingVertical: 8,
         backgroundColor: '#007ab3',
+    },
+    
+    input: {
+        width: '80%',
+        backgroundColor: '#1f1f1f', 
+        color: '#fff',
+        fontSize: 18,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        borderWidth: 2,
+        borderColor: '#00afef',
+        borderRadius: 5,
+        paddingVertical: 10,
+        marginBottom: 15,
     }
 })
