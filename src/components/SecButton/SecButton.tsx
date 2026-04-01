@@ -32,13 +32,13 @@ export function SecButton() {
         keyboardType="numeric"
         value={passwordLength}
         onChangeText={setPasswordLength}
-        placeholder="Ex: 12"
+        
       />
 
       <InputPassword pass={pass} />
 
       
-     <Pressable
+    <Pressable
     onPress={handleGenPassword}
     style={({ pressed }) => [
         styles.button,
